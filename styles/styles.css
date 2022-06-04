@@ -1,0 +1,406 @@
+html, body {
+  padding: 0;
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+button {
+  cursor: pointer;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  background: #1B1B1B;
+  color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.08);
+}
+
+header .menu-mobile {
+  display: none;
+}
+
+header span {
+  color: crimson;
+  font-weight: bold;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.15s ease-in;
+}
+
+header nav a:hover {
+  color: crimson;
+}
+
+header nav a.contact-anchor {
+  border: 1px solid crimson;
+  padding: 0.75rem 1.25rem;
+  color: white;
+  border-radius: 6px;
+  width: 100%;
+  transition: background-color 0.2s;
+}
+
+header nav a.contact-anchor:hover {
+  background: crimson;
+}
+
+header label, header #checkbox-menu {
+  display: none;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #141414;
+  padding: 2rem;
+  font-size: 1.75rem;
+  color: white;
+}
+
+.main-content .call-to-action {
+  max-width: 600px;
+}
+
+.main-content span {
+  color: crimson;
+}
+
+.main-content .cv-button {
+  border: none;
+  padding: 1rem;
+  border-radius: .5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: crimson;
+  box-sizing: border-box;
+  color: white;
+  transition: background-color 0.2s ease-in, color 0.2s ease-in;
+}
+
+.main-content .contact-button {
+  border: 1px solid white;
+  background: transparent;
+  padding: 1rem;
+  border-radius: .5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  transition: background-color 0.2s ease-in;
+}
+
+.main-content .cv-button:hover {
+  background: rgb(169, 9, 41);
+}
+
+.main-content .contact-button:hover {
+  color: crimson;
+  background: white;
+}
+
+.about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 2rem;
+  font-size: 1.5rem;
+  background: #1B1B1B;
+  color: white;
+}
+
+.about-me div {
+  max-width: 400px;
+}
+
+.about-me span {
+  color: crimson;
+  font-weight: bold;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #141414;
+  padding: 2rem;
+  font-size: 1.75rem;
+  color: white;
+}
+
+.projects .cards-project {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.projects .cards-project .card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.projects .cards-project .card button {
+  border: none;
+  padding: 1rem;
+  border-radius: 0 0 .5rem .5rem;
+  text-transform: uppercase;
+  width: 100%;
+  font-weight: bold;
+  background: crimson;
+  box-sizing: border-box;
+  color: white;
+  transition: background-color 0.2s ease-in, color 0.2s ease-in;
+}
+
+.projects .cards-project .card strong {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.techs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  color: white;
+  background: #141414;
+}
+
+.techs h2 {
+  text-align: center;
+  font-size: 1.75rem;
+}
+
+.techs .logo-mosaico {
+  display: flex;
+  font-size: 1.25rem;
+  margin-top: 1.5rem;
+  align-items: center;
+  text-align: center;
+  gap: 2.5rem;
+  font-weight: bold;
+}
+
+.techs img[alt="Logo Github"] {
+  filter: invert(1);
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  padding: 4rem;
+  background: #1B1B1B;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.contact div {
+  max-width: 400px;
+}
+
+.contact div span {
+  color: crimson;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  width: 100%;
+}
+
+.contact form label {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.contact form input {
+  border: 2px solid crimson;
+  margin: .5rem 0 1.25rem;
+  padding: .5rem;
+  border-radius: 6px;
+  background: #141414;
+  color: white;
+  outline: none;
+}
+
+.contact form textarea {
+  margin: .5rem 0 1.25rem;
+  border: 2px solid crimson;
+  padding: .5rem;
+  background: #141414;
+  color: white;
+  font-size: 1rem;
+  outline: none;
+}
+
+.contact form button {
+  border: none;
+  padding: 1rem;
+  border-radius: .5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: crimson;
+  color: white;
+  transition: background-color 0.2s ease-in;
+}
+
+.contact form button:hover {
+  background: rgb(169, 9, 41);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #141414;
+  padding: 1rem;
+  color: white;
+  font-weight: bold;
+}
+
+@media (max-width: 800px) {
+  .main-content {
+    text-align: center;
+  }
+
+  .main-content img {
+    display: none;
+  }
+
+  .about-me {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .about-me img {
+    width: 200px;
+  }
+
+  .techs .logo-mosaico {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2.5rem;
+  }
+
+  .contact {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact div {
+    max-width: unset;
+  }
+}
+
+@media (max-width: 650px) {
+  header nav {
+    display: none;
+  }
+
+  header nav.menu-mobile.active {
+    position: absolute;
+    width: 100%;
+    top: 60px;
+    overflow: hidden;
+    background-color: #e7e7e7;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    z-index: 1000;
+    right: 0;
+    padding: 1.5rem 0;
+    height: fit-content;
+    animation: fade_in_show 0.3s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.08);
+  }
+
+  header nav.menu-mobile.active a {
+    color: crimson;
+    padding-left: 2rem;
+    font-weight: bold;
+  }
+
+  header nav.menu-mobile .contact-anchor, 
+  header nav.menu-mobile .contact-anchor:hover {
+    border: none;
+    background: none;
+    text-align: unset;
+  }
+  
+  header label {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 22px;
+    width: 30px;
+  }
+  
+  header label span {
+    position: absolute;
+    display: block;
+    height: 2.5px;
+    width: 100%;
+    border-radius: 30px;
+    background-color: #fff;
+    transition: 0.25s ease-in-out;
+  }
+  
+  header label span:nth-child(1) {
+    top: 0;
+  }
+  
+  header label span:nth-child(2) {
+    top: 8px;
+  }
+  
+  header label span:nth-child(3) {
+    top: 16px;
+  }
+}
+
+@media (max-width: 380px) {
+  .techs .logo-mosaico {
+    grid-template-columns: 1fr 1fr;
+    font-size: 1rem;
+  }
+
+  .techs img {
+    width: 80px;
+  }
+}
+
+@keyframes fade_in_show {
+  0% {
+       opacity: 0;
+       transform: scale(0)
+  }
+
+  100% {
+       opacity: 1;
+       transform: scale(1)
+  }
+}
